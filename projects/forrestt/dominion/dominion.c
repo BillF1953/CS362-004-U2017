@@ -815,7 +815,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
   //uses switch to select card and perform actions
   switch( card ) 
     {
-    case adventurer:
+ /**   case adventurer:
 
       //drawntreasure, gstate, currentPlayer,
       while(drawntreasure<2){
@@ -860,7 +860,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       //put played card in played card pile
       discardCard(handPos, currentPlayer, state, 0);
 			
-      return 0;
+      return 0; **/
 			
     case feast:
       //gain card with cost up to 5
@@ -953,7 +953,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 			
       return 0;
 			
-    case remodel:
+  /**  case remodel:
       j = state->hand[currentPlayer][choice1];  //store card we will trash
 
       if ( (getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2) )
@@ -977,9 +977,9 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 	}
 
 
-      return 0;
+      return 0; **/
 		
-    case smithy:
+   /** case smithy:
       //+3 Cards
       for (i = 0; i < 3; i++)
 	{
@@ -988,7 +988,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 			
       //discard card from hand
       discardCard(handPos, currentPlayer, state, 0);
-      return 0;
+      return 0; **/
 		
     case village:
       //+1 Card
@@ -1052,7 +1052,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       
       return 0;
 		
-    case great_hall:
+  /**  case great_hall:
       //+1 Card
       drawCard(currentPlayer, state);
 			
@@ -1061,7 +1061,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 			
       //discard card from hand
       discardCard(handPos, currentPlayer, state, 0);
-      return 0;
+      return 0; **/
 		
     case minion:
       //+1 action
