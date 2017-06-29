@@ -1,3 +1,4 @@
+
 CFLAGS = -Wall -fpic -coverage -lm
 
 all: playdom player testDrawCard testBuyCard badTestDrawCard
@@ -35,7 +36,6 @@ runtests: testDrawCard
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
-
-
 clean:
-	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe
+	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard badTestDrawCard testDrawCard.exe
+
