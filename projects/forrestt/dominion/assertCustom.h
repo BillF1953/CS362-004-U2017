@@ -1,0 +1,8 @@
+//
+// Created by Tyler on 7/14/2017.
+//
+
+#ifndef DOMINION_ASSERTCUSTOM_H
+#define DOMINION_ASSERTCUSTOM_H
+
+#endif //DOMINION_ASSERTCUSTOM_H
