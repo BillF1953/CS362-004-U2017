@@ -42,6 +42,15 @@ unitTest3: unittest3.c dominion.o rngs.o assertCustom.o
 unitTest4: unittest4.c dominion.o rngs.o assertCustom.o
 	gcc -o unitTest4 -g unittest4.c dominion.o rngs.o assertCustom.o $(CFLAGS)
 
+randomtestcard1: randomtestcard1.c dominion.o rngs.o assertCustom.o
+	gcc -o randomtestcard1 -g randomtestcard1.c dominion.o rngs.o assertCustom.o $(CFLAGS)
+
+randomtestcard2: randomtestcard2.c dominion.o rngs.o assertCustom.o
+	gcc -o randomtestcard2 -g randomtestcard2.c dominion.o rngs.o assertCustom.o $(CFLAGS)
+
+randomtestAdventurer: randomtestAdventurer.c dominion.o rngs.o assertCustom.o
+	gcc -o randomtestAdventurer -g randomtestAdventurer.c dominion.o rngs.o assertCustom.o $(CFLAGS)
+
 badTestDrawCard: badTestDrawCard.c dominion.o rngs.o
 	gcc -o badTestDrawCard -g  badTestDrawCard.c dominion.o rngs.o $(CFLAGS)
 
@@ -66,9 +75,24 @@ runtests: unitTest1 unitTest2 unitTest3 unitTest4 cardTest1 cardTest2 cardTest3 
 	gcov -b -u dominion.c >> unittestresults.out
 	cat dominion.c.gcov >> unittestresults.out
 
+randomtestadventurer.out: randomtestadventurer
+	./randomtestadventurer &> randomtestadventurer.out
+	gcov -fcb dominion.c >> randomtestadventurer.out
+	cat dominion.c.gcov >> randomtestadventurer.out
+
+randomtestcard1.out: randomtestcard1
+	./randomtestcard1 &> randomtestcard1.out
+	gcov -fcb dominion.c >> randomtestcard1.out
+	cat dominion.c.gcov >> randomtestcard1.out
+
+randomtestcard2.out: randomtestcard2
+	./randomtestcard2 &> randomtestcard2.out
+	gcov -fcb dominion.c >> randomtestcard2.out
+	cat dominion.c.gcov >> randomtestcard2.out
+
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
 
 clean:
-	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so testDrawCard badTestDrawCard testDrawCard.exe unitTest1 unitTest2 unitTest3 unitTest4 cardTest1 cardTest2 cardTest3 cardTest4
+	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so testDrawCard badTestDrawCard testDrawCard.exe unitTest1 unitTest2 unitTest3 unitTest4 cardTest1 cardTest2 cardTest3 cardTest4 randomtestcard1 randomtestcard2 randomtestcardAdventurer
 
