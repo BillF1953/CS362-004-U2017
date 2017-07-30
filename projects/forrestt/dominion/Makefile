@@ -1,7 +1,7 @@
 
 CFLAGS = -Wall -fpic -coverage -lm
 
-all: playdom player testDrawCard testBuyCard badTestDrawCard cardTest1 cardTest2 cardTest3 cardTest4
+all: playdom player testDrawCard testBuyCard badTestDrawCard cardTest1 cardTest2 cardTest3 cardTest4 randomtestAdventurer.out randomtestcard1.out randomtestcard2.out
 
 rngs.o: rngs.h rngs.c
 	gcc -c rngs.c -g  $(CFLAGS)
@@ -75,19 +75,19 @@ runtests: unitTest1 unitTest2 unitTest3 unitTest4 cardTest1 cardTest2 cardTest3 
 	gcov -b -u dominion.c >> unittestresults.out
 	cat dominion.c.gcov >> unittestresults.out
 
-randomtestadventurer.out: randomtestadventurer
-	./randomtestadventurer &> randomtestadventurer.out
-	gcov -fcb dominion.c >> randomtestadventurer.out
-	cat dominion.c.gcov >> randomtestadventurer.out
-
-randomtestcard1.out: randomtestcard1
-	./randomtestcard1 &> randomtestcard1.out
-	gcov -fcb dominion.c >> randomtestcard1.out
+randomtestAdventurertest: randomtestAdventurer  
+	./randomtestAdventurer >> randomtestAdventurer.out
+	gcov -b -u dominion.c >> randomtestAdventurer.out
+	cat dominion.c.gcov >> randomtestAdventurer.out   
+	
+randomtestcard1test: randomtestcard1
+	./randomtestcard1 >> randomtestcard1.out
+	gcov -b -u dominion.c >> randomtestcard1.out
 	cat dominion.c.gcov >> randomtestcard1.out
 
-randomtestcard2.out: randomtestcard2
-	./randomtestcard2 &> randomtestcard2.out
-	gcov -fcb dominion.c >> randomtestcard2.out
+randomtestcard2test: randomtestcard2
+	./randomtestcard2 >> randomtestcard2.out
+	gcov -b -u dominion.c >> randomtestcard2.out
 	cat dominion.c.gcov >> randomtestcard2.out
 
 player: player.c interface.o
