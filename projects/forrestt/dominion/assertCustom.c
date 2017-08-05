@@ -112,7 +112,7 @@ void dumpVariables(struct gameState * oldG, struct gameState* newG){
 
 
 
-void assertCustom(int boolean, char * message, struct gameState * oldG, struct gameState* newG){
+void assertCustomR(int boolean, char * message, struct gameState * oldG, struct gameState* newG){
 
     if(DEBUG){
         printf("TEST PASSED: %s\n", message );
@@ -129,7 +129,7 @@ void assertCustom(int boolean, char * message, struct gameState * oldG, struct g
 
 }
 
-void assertGameState(int player, struct gameState * oldG, struct gameState * newG){
+void assertGameStateR(int player, struct gameState * oldG, struct gameState * newG){
     int failed = FALSE;
     if(oldG->handCount[player] !=   newG->handCount[player]){
         printf("TEST FAILED: Hand Count for non-action player Changed\n");

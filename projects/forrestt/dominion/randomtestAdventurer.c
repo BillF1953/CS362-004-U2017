@@ -91,13 +91,9 @@ int main() {
         for (player = 0; player < numPlayers; player++) {
 
             if (testDeckSize > minimumHandSize) {
-                if (Random() < .95) {
-                    G.handCount[player] = minimumHandSize;
-                }/** else {
 
-                    int bigHand = (int) (minimumHandSize * 10 * Random());
-                    G.handCount[player] = bigHand > testDeckSize ? testDeckSize : bigHand;
-                } **/
+                    G.handCount[player] = minimumHandSize;
+
             } else {
                 G.handCount[player] = testDeckSize;
             }
@@ -212,34 +208,34 @@ int main() {
 
 
         int handCount = testG.handCount[thisPlayer];
-            assertCustom(testG.handCount[thisPlayer] == G.handCount[thisPlayer] + newCards - discarded,
+            assertCustomR(testG.handCount[thisPlayer] == G.handCount[thisPlayer] + newCards - discarded,
                          "Receives 2 cards", &G,
                          &testG);
-            assertCustom(testG.deckCount[thisPlayer] == G.deckCount[thisPlayer] - drawnCards + shuffledCards,
+            assertCustomR(testG.deckCount[thisPlayer] == G.deckCount[thisPlayer] - drawnCards + shuffledCards,
                          "Deck Less Card", &G, &testG);
 
             if(DEBUG){printf("First Treasure %d ", treasure[0].type);}
             if(DEBUG){printf("Second Treasure %d ", treasure[1].type);}
         if(DEBUG){printf("Actual First Treasure %d\n ", testG.hand[thisPlayer][handCount - 1]);}
         if(DEBUG){printf("Actual Second Treasure %d\n ", testG.hand[thisPlayer][handCount - 2]);}
-            assertCustom(testG.hand[thisPlayer][handCount - 1] == treasure[1].type, "First Treasure", &G, &testG);
-            assertCustom(testG.hand[thisPlayer][handCount - 2] == treasure[0].type, "Second Treasure", &G, &testG);
+            assertCustomR(testG.hand[thisPlayer][handCount - 1] == treasure[1].type, "First Treasure", &G, &testG);
+            assertCustomR(testG.hand[thisPlayer][handCount - 2] == treasure[0].type, "Second Treasure", &G, &testG);
 
             if (shuffledCards) {
-                assertCustom(testG.discardCount[thisPlayer] == 0,
+                assertCustomR(testG.discardCount[thisPlayer] == 0,
                              "Discard Pile has shuffle", &G, &testG);
             } else {
 
-                assertCustom(testG.discardCount[thisPlayer] == G.discardCount[thisPlayer] + drawnCards - newCards, "Discard", &G, &testG);
+                assertCustomR(testG.discardCount[thisPlayer] == G.discardCount[thisPlayer] + drawnCards - newCards, "Discard", &G, &testG);
             }
 
-            assertCustom(testG.playedCardCount = G.playedCardCount + drawnCards, "Played Card Count", &G, &testG);
-            assertCustom(testG.coins == G.coins + xtraCoins, "No extra coins received", &G, &testG);
-            assertCustom(testG.whoseTurn == G.whoseTurn, "Same Players Turn", &G, &testG);
-            assertCustom(testG.numActions == G.numActions + numActions, "Number of actions", &G, &testG);
-            assertCustom(testG.numBuys == G.numBuys, "Number of Buys", &G, &testG);
+            assertCustomR(testG.playedCardCount = G.playedCardCount + drawnCards, "Played Card Count", &G, &testG);
+            assertCustomR(testG.coins == G.coins + xtraCoins, "No extra coins received", &G, &testG);
+            assertCustomR(testG.whoseTurn == G.whoseTurn, "Same Players Turn", &G, &testG);
+            assertCustomR(testG.numActions == G.numActions + numActions, "Number of actions", &G, &testG);
+            assertCustomR(testG.numBuys == G.numBuys, "Number of Buys", &G, &testG);
 
-            assertGameState(thisPlayer + 1, &G, &testG);
+            assertGameStateR(thisPlayer + 1, &G, &testG);
 
 
 

@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include "rngs.h"
-#include "assertCustom.h"
+#include "assertCustomUnit.h"
 #include <stdlib.h>
 
 #define TESTCARD "adventurer"

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Program3"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Program3">
+				<Option output="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Program3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 Program3"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Program3/fast">
+				<Option output="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Program3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 Program3/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tylerf/Dropbox/Oregon\ State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/assertCustom.c">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/assertCustom.h">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/assertCustomUnit.c">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/assertCustomUnit.h">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cardtest1.c">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cardtest2.c">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cardtest3.c">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/cardtest4.c">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/dominion.c">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/dominion.h">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/randomtestAdventurer.c">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/randomtestcard1.c">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/randomtestcard2.c">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/rngs.c">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/rngs.h">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/unittest1.c">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/unittest2.c">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/unittest3.c">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/unittest4.c">
+			<Option target="Program3"/>
+		</Unit>
+		<Unit filename="/home/tylerf/Dropbox/Oregon State/CS362/CS362-assignment-5/CS362-004-U2017/projects/forrestt/dominion/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

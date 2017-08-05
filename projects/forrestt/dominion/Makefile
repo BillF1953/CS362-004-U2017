@@ -64,16 +64,16 @@ interface.o: interface.h interface.c
 	gcc -c interface.c -g  $(CFLAGS)
 
 runtests: unitTest1 unitTest2 unitTest3 unitTest4 cardTest1 cardTest2 cardTest3 cardTest4
-	./unitTest1 >> unittestresults.out
-	./unitTest2 >> unittestresults.out
-	./unitTest3 >> unittestresults.out
-	./unitTest4 >> unittestresults.out
-	./cardTest1 >> unittestresults.out
-	./cardTest2 >> unittestresults.out
-	./cardTest3 >> unittestresults.out
-	./cardTest4 >> unittestresults.out
-	gcov -b -u dominion.c >> unittestresults.out
-	cat dominion.c.gcov >> unittestresults.out
+	./unitTest1 >> unittestresults1.out
+	./unitTest2 >> unittestresults1.out
+	./unitTest3 >> unittestresults1.out
+	./unitTest4 >> unittestresults1.out
+	./cardTest1 >> unittestresults1.out
+	./cardTest2 >> unittestresults1.out
+	./cardTest3 >> unittestresults1.out
+	./cardTest4 >> unittestresults1.out
+	gcov -b -u dominion.c >> unittestresults1.out
+	cat dominion.c.gcov >> unittestresults1.out
 
 randomtestAdventurertest: randomtestAdventurer  
 	./randomtestAdventurer >> randomtestAdventurer.out

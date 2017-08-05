@@ -12,7 +12,7 @@
 #include <stdlib.h>
 #include <tgmath.h>
 #include <time.h>
-#define TESTCARD "Great Hall"
+#define TESTCARD "Village"
 #define TESTRUNS 1000
 #define TESTRUNS_SIZE (TESTRUNS * MAX_DECK * MAX_PLAYERS * 10)
 #define DEBUG 0
@@ -48,7 +48,7 @@ int main() {
   const int xtraCoins = 0;
     int shuffledCards = 0;
     int numBuys = 0;
-  const int numActions =1;
+  const int numActions =2;
     int minimumHandSize = 5;
 
     int handpos = 0, choice1 = 0, choice2 = 0, choice3 = 0, bonus = 0;
@@ -156,28 +156,28 @@ int main() {
          }
 
 
-         cardEffect(great_hall, choice1, choice2, choice3, &testG, handpos, &bonus);
+         cardEffect(village, choice1, choice2, choice3, &testG, handpos, &bonus);
 
 
-         assertCustom(testG.handCount[thisPlayer] == G.handCount[thisPlayer] + newCards - discarded, "Receives cards", &G,
+         assertCustomR(testG.handCount[thisPlayer] == G.handCount[thisPlayer] + newCards - discarded, "Receives cards", &G,
                       &testG);
-         assertCustom(testG.deckCount[thisPlayer] == G.deckCount[thisPlayer] - newCards + shuffledCards,
+         assertCustomR(testG.deckCount[thisPlayer] == G.deckCount[thisPlayer] - newCards + shuffledCards,
                       "Deck One Less Card", &G, &testG);
        if(shuffledCards) {
-           assertCustom(testG.discardCount[thisPlayer] == 0,
+           assertCustomR(testG.discardCount[thisPlayer] == 0,
                         "Discard Pile has zero cards", &G, &testG);
        }
        else{
 
-           assertCustom(testG.discardCount[thisPlayer] == G.discardCount[thisPlayer], "Discard", &G, &testG);
+           assertCustomR(testG.discardCount[thisPlayer] == G.discardCount[thisPlayer], "Discard", &G, &testG);
        }
-         assertCustom(testG.playedCardCount = G.playedCardCount + discarded, "Played Card Count", &G, &testG);
-         assertCustom(testG.coins == G.coins + xtraCoins, "No extra coins received", &G, &testG);
-         assertCustom(testG.whoseTurn == G.whoseTurn, "Same Players Turn", &G, &testG);
-         assertCustom(testG.numActions == G.numActions + numActions, "Number of actions", &G, &testG);
-         assertCustom(testG.numBuys == G.numBuys, "Number of Buys", &G, &testG);
-         assertCustom(testG.playedCardCount == G.playedCardCount + discarded, "Number of Cards Discarded", &G, &testG);
-         assertGameState(thisPlayer + 1, &G, &testG);
+         assertCustomR(testG.playedCardCount = G.playedCardCount + discarded, "Played Card Count", &G, &testG);
+         assertCustomR(testG.coins == G.coins + xtraCoins, "No extra coins received", &G, &testG);
+         assertCustomR(testG.whoseTurn == G.whoseTurn, "Same Players Turn", &G, &testG);
+         assertCustomR(testG.numActions == G.numActions + numActions, "Number of actions", &G, &testG);
+         assertCustomR(testG.numBuys == G.numBuys, "Number of Buys", &G, &testG);
+         assertCustomR(testG.playedCardCount == G.playedCardCount + discarded, "Number of Cards Discarded", &G, &testG);
+         assertGameStateR(thisPlayer + 1, &G, &testG);
 
     }
 

@@ -47,7 +47,7 @@ int main() {
     int xtraCoins = 0;
     int shuffledCards = 0;
     int numBuys = 0;
-    int numActions =0;
+    int numActions =1;
     int minimumHandSize = 5;
 
     int handpos = 0, choice1 = 0, choice2 = 0, choice3 = 0, bonus = 0;
@@ -143,16 +143,16 @@ int main() {
          cardEffect(smithy, choice1, choice2, choice3, &testG, handpos, &bonus);
 
 
-         assertCustom(testG.handCount[thisPlayer] == G.handCount[thisPlayer] + newCards - discarded, "Receives 3 cards", &G,
+         assertCustomR(testG.handCount[thisPlayer] == G.handCount[thisPlayer] + newCards - discarded, "Receives 3 cards", &G,
                       &testG);
-         assertCustom(testG.deckCount[thisPlayer] == G.deckCount[thisPlayer] - newCards + shuffledCards,
+         assertCustomR(testG.deckCount[thisPlayer] == G.deckCount[thisPlayer] - newCards + shuffledCards,
                       "Deck has 3 less Cards", &G, &testG);
-         assertCustom(testG.coins == G.coins + xtraCoins, "No extra coins received", &G, &testG);
-         assertCustom(testG.whoseTurn == G.whoseTurn, "Same Players Turn", &G, &testG);
-         assertCustom(testG.numActions == G.numActions, "Number of actions", &G, &testG);
-         assertCustom(testG.numBuys == G.numBuys, "Number of Buys", &G, &testG);
-         assertCustom(testG.playedCardCount == G.playedCardCount + discarded, "Number of Cards Discarded", &G, &testG);
-         assertGameState(thisPlayer + 1, &G, &testG);
+         assertCustomR(testG.coins == G.coins + xtraCoins, "No extra coins received", &G, &testG);
+         assertCustomR(testG.whoseTurn == G.whoseTurn, "Same Players Turn", &G, &testG);
+         assertCustomR(testG.numActions == G.numActions + numActions, "Number of actions", &G, &testG);
+         assertCustomR(testG.numBuys == G.numBuys, "Number of Buys", &G, &testG);
+         assertCustomR(testG.playedCardCount == G.playedCardCount + discarded, "Number of Cards Discarded", &G, &testG);
+         assertGameStateR(thisPlayer + 1, &G, &testG);
 
     }
 

@@ -757,6 +757,8 @@ void great_hallAction(struct gameState *state, int currentPlayer, int handPos) {
     if(Random() > .02){
     discardCard(handPos, currentPlayer, state, 0);
     }
+
+
 }
 
 

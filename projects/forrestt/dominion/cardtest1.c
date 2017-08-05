@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include "rngs.h"
-#include "assertCustom.h"
+#include "assertCustomUnit.h"
 #include <stdlib.h>
 
 #define TESTCARD "smithy"
@@ -48,7 +48,7 @@ int main() {
     assertCustom(testG.deckCount[thisPlayer] == G.deckCount[thisPlayer] - newCards + shuffledCards, "Deck has 3 less Cards");
     assertCustom(testG.coins == G.coins + xtraCoins, "No extra coins received");
     assertCustom(testG.whoseTurn == G.whoseTurn, "Same Players Turn");
-    assertCustom(testG.numActions == G.numActions, "Number of actions" );
+    assertCustom(testG.numActions == G.numActions, "Number of actions");
     assertCustom(testG.numBuys == G.numBuys, "Number of Buys" );
     assertCustom(testG.playedCardCount == G.playedCardCount + discarded, "Number of Cards Discarded");
     assertGameState(thisPlayer+1, &G, &testG);

@@ -8,10 +8,10 @@
 #include <stdio.h>
 #include <assert.h>
 #include "rngs.h"
-#include "assertCustom.h"
+#include "assertCustomUnit.h"
 #include <stdlib.h>
 
-#define TESTCARD "great_hall"
+#define TESTCARD "Village"
 
 
 
@@ -36,15 +36,15 @@ int main() {
 
     // initialize a game state and player cards
     initializeGame(numPlayers, k, seed, &G);
-    printf("----------------- Testing Great Hall Card: %s ----------------\n", TESTCARD);
+    printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
     //Great Hall should receive one card and one action
     //copy game state
     memcpy(&testG, &G, sizeof(struct gameState));
 
-    cardEffect(great_hall, choice1, choice2, choice3, &testG, handpos, &bonus);
+    cardEffect(village, choice1, choice2, choice3, &testG, handpos, &bonus);
     newCards = 1;
     xtraCoins = 0;
-    numActions = 1;
+    numActions = 2;
 
 
     assertCustom(testG.handCount[thisPlayer] == G.handCount[thisPlayer] + newCards - discarded, "Receives 1 cards");

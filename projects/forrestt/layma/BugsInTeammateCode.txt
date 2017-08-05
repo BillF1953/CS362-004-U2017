@@ -1,0 +1,23 @@
+
+Played Card Adventurer draws until 3-Treasurer
+	Steps to Reproduce:
+1. Start Dominion Game
+2. Buy Silver until hand has six coins
+3. On turn Buy Adventurer Card 
+4. On turn when received in hand Play Adventurer Card. 
+5. Observe that you have now draw until 3 treasures have been obtained.
+
+	The Effect of the Bug: 
+In the dominion rules, it states the Adventurer card should draw until 2 treasures are drawn discarding the non-treasure cards. The extra coins and discarded actions change game play and strategy significantly. Players unaware of this side effect will be at a disadvantage of more knowledgeable players. 
+
+
+            Played Card Smithy Gives Player an Extra Action
+	
+	Steps to Reproduce:
+1. Start Dominion Game
+2. On turn Buy Smithy Card on player’s Turn
+3. On turn when received in hand Play Smithy Card. 
+4. Observe that you have now gain an extra action.
+
+	The Effect of the Bug: 
+In the dominion rules, it states the Smithy card should receive 3 cards. The extra action changes game play and strategy significantly. Players unaware of this side effect will be at a disadvantage of more knowledgeable players. 
